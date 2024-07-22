@@ -32,7 +32,6 @@ class Ship:
         return decks
 
     def get_deck(self, row: int, column: int) -> Deck:
-        # Find the corresponding deck in the list
         for deck in self.decks:
             if deck.get_coordinates() == (row, column):
                 return deck
